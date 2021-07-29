@@ -2,12 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
+import Router from './config/router'
 function App() {
   return (
     <div className="App">
-      {/* <h1>Welcome to Gullah MarketPlace</h1> */}
-      <SignUp />
-      <Login />
+      <Router />
     </div>
   );
 }
