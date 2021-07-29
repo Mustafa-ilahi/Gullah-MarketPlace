@@ -1,0 +1,14 @@
+.login-form{
+    background-color: #f5f9fc;
+    width: 50%;
+}
+
+.main-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#heading{
+    font-weight: bold;
+    color: #2558ab
+}
