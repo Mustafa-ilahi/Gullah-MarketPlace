@@ -20,7 +20,11 @@ function Login(){
                 <h1>Hello world</h1>
             </div>
             <div className="login-form">
-
+                <p>English (USA)</p>
+                <select>
+                    <option></option>
+                </select>
+                <p>START WITH GULLAH MARKETPLACE</p>
                 <h1 id="heading">Log in to Gullah Marketplace</h1>
                 <label>E-mail* </label>
                 <input placeholder="example@gmail.com" onChange={(e)=>setEmail(e.target.value)}/>
