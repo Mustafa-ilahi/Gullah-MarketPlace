@@ -10,6 +10,7 @@
     justify-content: space-around;
 }
 
+
 #heading{
     font-weight: bold;
     color: #2558ab;
@@ -18,7 +19,14 @@
 select{
     background-color: #f5f9fc;
     border: none;
-    position: relative;
-    bottom: 38px;
-    left: 60px;
+}
+
+#english-dropdown{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#start-text{
+    display: flex;
+    justify-content: flex-start;
 }

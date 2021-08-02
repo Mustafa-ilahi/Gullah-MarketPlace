@@ -18,15 +18,16 @@ function Login(){
     }
     return(
         <div className="main-div">
-            <div>
+            <div id="left-div">
                 <h1>Hello world</h1>
             </div>
             <div className="login-form">
-                <p>English (USA)</p>
+                <p id="english-dropdown">English (USA)
                 <select>
                     <option></option>
                 </select>
-                <p>START WITH GULLAH MARKETPLACE</p>
+                </p>
+                <p id="start-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; START WITH GULLAH MARKETPLACE</p>
                 <h1 id="heading">Log in to Gullah Marketplace</h1>
                 <label>E-mail* </label>
                 <input placeholder="example@gmail.com" onChange={(e)=>setEmail(e.target.value)}/>
