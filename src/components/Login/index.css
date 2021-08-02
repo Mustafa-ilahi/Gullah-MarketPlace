@@ -30,3 +30,9 @@ select{
     display: flex;
     justify-content: flex-start;
 }
+
+#signup-tag{
+    text-decoration: none;
+    color: #2558ab;
+    font-weight: bold;
+}
