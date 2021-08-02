@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useHistory } from "react-router-dom"
 import { signUp } from '../../config/firebase'
+
 function SignUp(){
     const [firstName, setFirstName] = useState()
     const [lastName, setLastName] = useState()

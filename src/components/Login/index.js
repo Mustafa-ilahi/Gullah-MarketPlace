@@ -1,7 +1,9 @@
-import { useState } from "react"
-import { Link, useHistory } from "react-router-dom"
-import { login } from "../../config/firebase"
-import './index.css'
+import { useState } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { login } from "../../config/firebase";
+import './index.css';
+import Button from 'react-bootstrap/Button';
+
 function Login(){
     const [email,setEmail] = useState()
     const [password,setPassword] = useState()
@@ -27,18 +29,20 @@ function Login(){
                     <option></option>
                 </select>
                 </p>
-                <p id="start-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; START WITH GULLAH MARKETPLACE</p>
-                <h1 id="heading">Log in to Gullah Marketplace</h1>
-                <p>Not a member yet? &nbsp;
+                <p id="start-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; START WITH GULLAH MARKETPLACE</p>
+                <h1 id="heading">&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;Log in to Gullah Marketplace</h1>
+                <p id="not-member">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Not a member yet? &nbsp;
                     <Link to="/signup" id="signup-tag">Sign up now</Link>
                 </p>
-                <label>E-mail* </label>
+                <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E-mail* </label>
+                <br />
                 <input placeholder="example@gmail.com" onChange={(e)=>setEmail(e.target.value)}/>
                 <br />
-                <label>Password* </label>
-                <input type="password" placeholder="******" onChange={(e)=>setPassword(e.target.value)}/>
+                <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Password* </label>
                 <br />
-                <button onClick={signIn}>Login</button>
+                <input type="password" placeholder="*********" onChange={(e)=>setPassword(e.target.value)}/>
+                <br />
+                <button onClick={signIn} id="login-btn">Login</button>
             </div>
         </div>
     )

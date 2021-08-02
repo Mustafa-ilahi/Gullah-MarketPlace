@@ -1,8 +1,12 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .login-form{
     background-color: #f5f9fc;
     width: 50%;
     position: relative;
     left: 140px;
+    height: 750px;
 }
 
 .main-div{
@@ -14,6 +18,7 @@
 #heading{
     font-weight: bold;
     color: #2558ab;
+    display: flex;
 }
 
 select{
@@ -24,15 +29,57 @@ select{
 #english-dropdown{
     display: flex;
     justify-content: flex-end;
+    font-size: 15px;
 }
 
 #start-text{
     display: flex;
     justify-content: flex-start;
+    font-size: 15px;
 }
 
 #signup-tag{
     text-decoration: none;
     color: #2558ab;
     font-weight: bold;
+}
+
+label{
+    display: flex;
+    /* justify-content:right; */
+}
+
+#not-member{
+    display: flex;
+    position: relative;
+    bottom: 15px;
+}
+
+input{
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    left: 82px;
+    height: 30px;
+    width: 70%;
+    border: 2px solid lightgray;
+}
+
+::placeholder{
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    left: 12px;
+}
+
+#login-btn{
+    color: white;
+    background-color: #2558ab;
+    width: 70%;
+    height: 5%;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    right: 25px;
 }
