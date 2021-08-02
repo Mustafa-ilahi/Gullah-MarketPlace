@@ -1,5 +1,6 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
 }
 .login-form{
     background-color: #f5f9fc;
@@ -7,6 +8,7 @@
     position: relative;
     left: 140px;
     height: 750px;
+    overflow-x: hidden;
 }
 
 .main-div{
@@ -27,8 +29,8 @@ select{
 }
 
 #english-dropdown{
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
+    left: 210px;
     font-size: 15px;
 }
 
@@ -82,4 +84,67 @@ input{
     border: none;
     position: relative;
     right: 25px;
+    cursor: pointer;
+}
+
+#google-login{
+    background-color: white ;
+    width: 70%;
+    height: 7%;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    position: relative;
+    right: 25px;
+    cursor: pointer;   
+    position: relative;
+    top: 10px;
+}
+
+#login-text{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+#footer-para{
+    color: gray;
+    position: relative;
+    right: 140px;
+    font-size: 14px;
+}
+
+.blue-text{
+    color: #2558ab;
+    position: relative;
+}
+
+#last-para{
+    position: relative;
+    right: 36px;
+}
+
+#gullah-heading{
+    color: #2558ab;
+    font-weight: bold;
+    display: flex;
+    
+}
+
+#lorem-para{
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+#side-img{
+    height: 550px;
+    position: relative;
+    left: 20px;
+}
+
+#copyright-text{
+    color: gray;
+    font-size: 14px;
 }

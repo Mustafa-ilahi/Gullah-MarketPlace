@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { login } from "../../config/firebase";
 import './index.css';
-import Button from 'react-bootstrap/Button';
+import gIcon from '../../assets/g-icon.PNG';
+import sideImg from '../../assets/login-img.PNG'
 
 function Login(){
     const [email,setEmail] = useState()
@@ -21,7 +22,11 @@ function Login(){
     return(
         <div className="main-div">
             <div id="left-div">
-                <h1>Hello world</h1>
+                <h2 id="gullah-heading">Gullah Marketplace</h2>
+                <p id="lorem-para">Lorem ipsum is simply dummy text of the printing and typesetting industry</p>
+                <img src={sideImg} id="side-img"/>
+                <br/>
+                <p id="copyright-text">&copy; 2020 Gullah Marketplace. All Rights Reserved.</p>
             </div>
             <div className="login-form">
                 <p id="english-dropdown">English (USA)
@@ -43,6 +48,13 @@ function Login(){
                 <input type="password" placeholder="*********" onChange={(e)=>setPassword(e.target.value)}/>
                 <br />
                 <button onClick={signIn} id="login-btn">Login</button>
+                <br/><br/>
+                <button id="google-login">
+                    <img src={gIcon} id="g-icon"/>
+                    <span id="login-text">Login with Google</span>
+                </button>
+                <br/><br/><br/><br/><br/>
+                <p id="footer-para">The site is protected by reCAPTCHA and the Google <br/><span id="last-para"><span className="blue-text">Privacy Policy</span> and <span className="blue-text">Terms of Service</span> apply</span></p>
             </div>
         </div>
     )
