@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { login } from "../../config/firebase";
-import './index.css';
+import './login.css';
 import gIcon from '../../assets/g-icon.PNG';
 import sideImg from '../../assets/login-img.PNG'
 
@@ -39,13 +39,13 @@ function Login(){
                 <p id="not-member">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Not a member yet? &nbsp;
                     <Link to="/signup" id="signup-tag">Sign up now</Link>
                 </p>
-                <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E-mail* </label>
+                <label className="label">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E-mail* </label>
                 <br />
-                <input placeholder="example@gmail.com" onChange={(e)=>setEmail(e.target.value)}/>
+                <input className="input-fields" placeholder="example@gmail.com" onChange={(e)=>setEmail(e.target.value)}/>
                 <br />
-                <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Password* </label>
+                <label className="label">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Password* </label>
                 <br />
-                <input type="password" placeholder="*********" onChange={(e)=>setPassword(e.target.value)}/>
+                <input  className="input-fields" type="password" placeholder="*********" onChange={(e)=>setPassword(e.target.value)}/>
                 <br />
                 <button onClick={signIn} id="login-btn">Login</button>
                 <br/><br/>

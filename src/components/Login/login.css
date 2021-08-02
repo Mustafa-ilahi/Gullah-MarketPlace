@@ -46,7 +46,7 @@ select{
     font-weight: bold;
 }
 
-label{
+.label{
     display: flex;
     /* justify-content:right; */
 }
@@ -57,7 +57,7 @@ label{
     bottom: 15px;
 }
 
-input{
+.input-fields{
     display: flex;
     position: relative;
     bottom: 10px;

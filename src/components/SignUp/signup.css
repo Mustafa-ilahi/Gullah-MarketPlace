@@ -1,0 +1,80 @@
+#main-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#signup-div{
+    background-color: #f5f9fc;
+    width: 50%;
+    position: relative;
+    left: 185px;
+    height: 750px;
+}
+
+#english-dropdown{
+    position: relative;
+    left: 260px;
+    font-size: 15px;
+}
+
+#start-text{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+}
+
+#heading{
+    font-weight: bold;
+    color: #2558ab;
+    display: flex;
+}
+
+#not-member{
+    display: flex;
+    position: relative;
+    bottom: 15px;
+    right: 15px;
+}
+
+#login-tag{
+    text-decoration: none;
+    color: #2558ab;
+    font-weight: bold;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+}
+.name{
+    display: flex;
+}
+#first-name{
+    display: flex;
+    justify-content: flex-start;
+}
+#last-name{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#last-name-input{
+    position: relative;
+    left: 8px;
+}
+
+#first-name-input{
+    position: relative;
+    right: 4px;
+}
+
+input{
+    height: 30px;
+    /* width: 70%; */
+    border: 2px solid lightgray;
+}
+.fullname{
+    display: flex;
+    position: relative;
+    top: 8px;
+}
