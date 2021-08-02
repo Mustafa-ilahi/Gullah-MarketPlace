@@ -4,6 +4,8 @@ import { login } from "../../config/firebase";
 import './login.css';
 import gIcon from '../../assets/g-icon.PNG';
 import sideImg from '../../assets/login-img.PNG'
+import mailIcon from '../../assets/mail-icon.PNG'
+import passIcon from '../../assets/pass-icon.PNG'
 
 function Login(){
     const [email,setEmail] = useState()
@@ -34,18 +36,20 @@ function Login(){
                     <option></option>
                 </select>
                 </p>
-                <p id="start-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; START WITH GULLAH MARKETPLACE</p>
-                <h1 id="heading">&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;Log in to Gullah Marketplace</h1>
-                <p id="not-member">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Not a member yet? &nbsp;
+                <p id="start-text-login">START WITH GULLAH MARKETPLACE</p>
+                <h1 id="heading">Log in to Gullah Marketplace</h1>
+                <p id="not-member-log-in">Not a member yet? &nbsp;
                     <Link to="/signup" id="signup-tag">Sign up now</Link>
                 </p>
-                <label className="label">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E-mail* </label>
+                <label className="label"> E-mail* </label>
                 <br />
                 <input className="input-fields" placeholder="example@gmail.com" onChange={(e)=>setEmail(e.target.value)}/>
+                <img src={mailIcon} id="mail-icon"/>
                 <br />
-                <label className="label">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Password* </label>
+                <label className="label"> Password* </label>
                 <br />
                 <input  className="input-fields" type="password" placeholder="*********" onChange={(e)=>setPassword(e.target.value)}/>
+                <img src={passIcon} id="pass-icon"/>
                 <br />
                 <button onClick={signIn} id="login-btn">Login</button>
                 <br/><br/>

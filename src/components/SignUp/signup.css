@@ -7,7 +7,7 @@
     background-color: #f5f9fc;
     width: 50%;
     position: relative;
-    left: 185px;
+    left: 110px;
     height: 750px;
 }
 
@@ -25,7 +25,7 @@
     left: 80px;
 }
 
-#heading{
+#heading-signup{
     font-weight: bold;
     color: #2558ab;
     display: flex;
@@ -48,14 +48,10 @@
     font-weight: bold;
 }
 
-input{
-    width: 200px;
-    height: 20px;
-}
 .name{
     display: flex;
     position: relative;
-    left: 90px;
+    left: 85px;
 }
 #first-name{
     display: flex;
@@ -65,12 +61,12 @@ input{
     display: flex;
     justify-content: flex-start;
     position: relative;
-    left: 165px;
+    left: 235px;
 }
 
 #last-name-input{
     position: relative;
-    left: 8px;
+    left: 25px;
 }
 
 #first-name-input{
@@ -80,14 +76,14 @@ input{
 
 input{
     height: 30px;
-    /* width: 70%; */
+    width: 35%;
     border: 2px solid lightgray;
 }
 .name-inputs{
     display: flex;
     position: relative;
     top: 8px;
-    left: 115px;
+    left: 85px;
 }
 
 .email-text{
@@ -98,7 +94,7 @@ input{
 }
 #phone-text{
     position: relative;
-    left: 205px;
+    left: 270px;
 }
 
 .email-input{
@@ -111,4 +107,99 @@ input{
 #phone-input{
     position: relative;
     left: 30px;
+}
+
+.password{
+    display: flex;
+    position: relative;
+    left: 85px;
+    top: 4px;
+}
+
+#confirm-pass{
+    position: relative;
+    left: 245px;
+}
+
+.password-inputs{
+    display: flex;
+    position: relative;
+    left: 85px;
+    top: 12px;
+}
+
+#confirm-pass-input{
+    position: relative;
+    left: 30px;
+}
+
+#create-acc-btn{
+    color: white;
+    background-color: #2558ab;
+    width: 70%;
+    height: 5%;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    right: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#footer-para{
+    color: gray;
+    position: relative;
+    right: 140px;
+    font-size: 14px;
+}
+
+.blue-text{
+    color: #2558ab;
+    position: relative;
+}
+
+#google-login{
+    background-color: white ;
+    width: 70%;
+    height: 7%;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    position: relative;
+    right: 25px;
+    cursor: pointer;   
+    position: relative;
+    top: 10px;
+    border-radius: 3px;
+}
+
+#login-text{
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+#gullah-heading{
+    color: #2558ab;
+    font-weight: bold;
+    display: flex;
+}
+
+#lorem-para{
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+#side-img{
+    height: 550px;
+    position: relative;
+    left: 20px;
+}
+
+#copyright-text{
+    color: gray;
+    font-size: 14px;
 }

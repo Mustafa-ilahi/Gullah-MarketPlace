@@ -21,6 +21,8 @@
     font-weight: bold;
     color: #2558ab;
     display: flex;
+    position: relative;
+    left: 80px;
 }
 
 select{
@@ -34,10 +36,12 @@ select{
     font-size: 15px;
 }
 
-#start-text{
+#start-text-login{
     display: flex;
     justify-content: flex-start;
     font-size: 15px;
+    position: relative;
+    left: 80px;
 }
 
 #signup-tag{
@@ -48,13 +52,15 @@ select{
 
 .label{
     display: flex;
-    /* justify-content:right; */
+    position: relative;
+    left: 85px;
 }
 
-#not-member{
+#not-member-log-in{
     display: flex;
     position: relative;
     bottom: 15px;
+    left: 80px;
 }
 
 .input-fields{
@@ -85,6 +91,7 @@ select{
     position: relative;
     right: 25px;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 #google-login{
@@ -98,6 +105,7 @@ select{
     cursor: pointer;   
     position: relative;
     top: 10px;
+    border-radius: 3px;
 }
 
 #login-text{
@@ -147,4 +155,16 @@ select{
 #copyright-text{
     color: gray;
     font-size: 14px;
+}
+
+#mail-icon{
+    position: relative;
+    bottom: 39px;
+    left: 215px;
+}
+
+#pass-icon{
+    position: relative;
+    bottom: 39px;
+    left: 215px;
 }
