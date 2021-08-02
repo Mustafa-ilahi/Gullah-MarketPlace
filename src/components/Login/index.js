@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useHistory } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import { login } from "../../config/firebase"
 import './index.css'
 function Login(){
@@ -29,6 +29,9 @@ function Login(){
                 </p>
                 <p id="start-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; START WITH GULLAH MARKETPLACE</p>
                 <h1 id="heading">Log in to Gullah Marketplace</h1>
+                <p>Not a member yet? 
+                    <Link to="/signup">Sign up now</Link>
+                </p>
                 <label>E-mail* </label>
                 <input placeholder="example@gmail.com" onChange={(e)=>setEmail(e.target.value)}/>
                 <br />
