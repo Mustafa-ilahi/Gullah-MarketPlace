@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useHistory } from "react-router-dom"
 import { signUp } from '../../config/firebase'
 function SignUp(){
     const [firstName, setFirstName] = useState()
@@ -7,9 +8,10 @@ function SignUp(){
     const [phone, setPhone] = useState()
     const [password, setPassword] = useState()
     const [confirmPassword, setConfirmPassword] = useState()
-    // const [allData,setAllData] = useState({})
+    const history = useHistory();
     const createAccount = () => {
         signUp(email,password,firstName,lastName,phone,confirmPassword)
+        history.push('/dashboard')
     }
     return(
         <div>

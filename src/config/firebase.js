@@ -19,7 +19,7 @@ const signUp = (email,password,firstName,lastName,phone,confirmPassword) => {
     firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
       var user = userCredential.user;
-      alert("user registered successfully");
+      // alert("user registered successfully");
       db.collection('users').doc(user.uid).set({email,firstName,lastName,phone})
       .then(res => {
         alert('user info added', res)
