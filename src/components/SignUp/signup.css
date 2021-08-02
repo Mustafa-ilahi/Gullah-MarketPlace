@@ -21,12 +21,16 @@
     display: flex;
     justify-content: flex-start;
     font-size: 15px;
+    position: relative;
+    left: 80px;
 }
 
 #heading{
     font-weight: bold;
     color: #2558ab;
     display: flex;
+    position: relative;
+    left: 80px;
 }
 
 #not-member{
@@ -34,6 +38,8 @@
     position: relative;
     bottom: 15px;
     right: 15px;
+    position: relative;
+    left: 80px;
 }
 
 #login-tag{
@@ -48,6 +54,8 @@ input{
 }
 .name{
     display: flex;
+    position: relative;
+    left: 90px;
 }
 #first-name{
     display: flex;
@@ -56,6 +64,8 @@ input{
 #last-name{
     display: flex;
     justify-content: flex-start;
+    position: relative;
+    left: 165px;
 }
 
 #last-name-input{
@@ -73,8 +83,32 @@ input{
     /* width: 70%; */
     border: 2px solid lightgray;
 }
-.fullname{
+.name-inputs{
     display: flex;
     position: relative;
     top: 8px;
+    left: 115px;
+}
+
+.email-text{
+    display: flex;
+    position: relative;
+    left: 85px;
+    top: 5px;
+}
+#phone-text{
+    position: relative;
+    left: 205px;
+}
+
+.email-input{
+    display: flex;
+    position: relative;
+    left: 85px;
+    top: 12px;
+}
+
+#phone-input{
+    position: relative;
+    left: 30px;
 }

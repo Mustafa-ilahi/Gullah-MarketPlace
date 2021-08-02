@@ -25,31 +25,34 @@ function SignUp(){
                         <option></option>
                     </select>
                 </p>
-                <p id="start-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; START WITH GULLAH MARKETPLACE</p>
-                <h1 id="heading">&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;Sign up to Gullah Marketplace</h1>
-                <p id="not-member">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Already a member? &nbsp;
+                <p id="start-text">START WITH GULLAH MARKETPLACE</p>
+                <h1 id="heading">Sign up to Gullah Marketplace</h1>
+                <p id="not-member">Already a member? &nbsp;
                     <Link to="/login" id="login-tag">Login now</Link>
                 </p>
                 <div className="name">
-                <label id="first-name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; First Name * </label>
-                <label id="last-name">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Last Name * </label><br/>
+                <label id="first-name">First Name * </label>
+                <label id="last-name">Last Name * </label><br/>
                 </div>
-                {/* <br/> */}
-                <div className="fullname">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input id="first-name-input" placeholder="Enter First name" onChange={(e)=>setFirstName(e.target.value)}/> &nbsp; &nbsp;
-                &nbsp; &nbsp; <input id="last-name-input" placeholder="Enter Last name" onChange={(e)=>setLastName(e.target.value)}/>
+                <div className="name-inputs">
+                    <input id="first-name-input" placeholder="Enter First name" onChange={(e)=>setFirstName(e.target.value)}/> &nbsp; &nbsp;
+                    <input id="last-name-input" placeholder="Enter Last name" onChange={(e)=>setLastName(e.target.value)}/>
                 </div>
                 <br />
-                {/* <label>E-mail *  </label>
-                <input placeholder="Email" onChange={(e)=>setEmail(e.target.value)}/> &nbsp; &nbsp; 
-                <label>Phone * </label>
-                <input placeholder="Phone" onChange={(e)=>setPhone(e.target.value)}/>
+                <div className="email-text">
+                    <label>E-mail *  </label>
+                    <label id="phone-text"> Phone * </label>
+                </div>
+                <div className="email-input">
+                    <input placeholder="Email" onChange={(e)=>setEmail(e.target.value)}/> &nbsp; &nbsp; 
+                    <input id="phone-input" placeholder="Phone" onChange={(e)=>setPhone(e.target.value)}/>
+                </div>
                 <br />
                 <label>Password * </label>
                 <input type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)}/> &nbsp; &nbsp;
                 <label>Confirm Password * </label>
                 <input type="password" placeholder="Confirm Password" onChange={(e)=>setConfirmPassword(e.target.value)}/>
-                <br /><br /> */}
+                <br /><br />
                 <button onClick={createAccount}>Create Account</button>
             </div>
         </div>
