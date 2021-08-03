@@ -1,8 +1,12 @@
+// import Navbar from 'react-bootstrap/Navbar'
+// import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from '../Header'
+
 function Home() {
     return(
         <div>
-            <h1>Mai home hun</h1>
-            <h3>Mai sbb data launga ads bh info bh</h3>
+            <Header />
         </div>
     )
 }
