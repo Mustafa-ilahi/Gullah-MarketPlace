@@ -5,7 +5,7 @@ import {
   } from "react-router-dom"
   import Login from '../components/Login'
   import SignUp from '../components/SignUp'
-  import Dashboard from '../views/Dashboard'
+  import Home from '../views/Home'
   
   export default function App() {
     return (
@@ -18,8 +18,8 @@ import {
             <Route path="/signup">
               <SignUp />
             </Route>
-            <Route path="/dashboard">
-              <Dashboard />
+            <Route path="/">
+              <Home />
             </Route>
           </Switch>
         </div>
